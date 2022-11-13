@@ -15,7 +15,7 @@ I got information from this [article](https://blog.gruntwork.io/how-to-manage-te
 - # Steps to run this code
 - 1.You need to copy and remove terraform backend block and          outputs from line no.50 to 70 in main.tf file.
 
-![image](https://user-images.githubusercontent.com/109335469/201347680-336be92e-cc25-4435-8164-4c5fea7a3a6e.png)
+
 
 2.Give unique Bucket_NAME in line no.10 in main.tf file.
  3.Give unique DYNAMODB_TABLE_NAME in line no. 41 in main.tf file
@@ -33,7 +33,7 @@ terraform apply
 ```
 
 6.Now add the terraform backend block code which you copy in first step from line no.50 to 61.Give the BUCKET_NAME and DYNAMODB_TABLE_NAME which we create above.
-![image](https://user-images.githubusercontent.com/109335469/201348273-98502e66-88d3-4d52-92f8-d7cf80cd10b7.png)
+
 
 
 7.Run terraform init command then yes (it download provider code, and configure your Terraform backend.After running this command, your Terraform state will be stored in the S3 bucket. You can check this by heading over to the S3 Management Console in your browser and clicking your bucket).
@@ -42,7 +42,7 @@ terraform apply
 terraform init
 ```
 8.Now add the outputs code which you copy in first step from line no.62 to 70.(Now backend enabled, Terraform will automatically pull the latest state from this S3 bucket before running a command and automatically push the latest state to the S3 bucket after running a command. To see this in action, that's why we add output variables).
-![image](https://user-images.githubusercontent.com/109335469/201348951-56e7b072-42d6-4523-9219-0b4940b6a0a3.png)
+
 
 
 9.Run terraform apply command(to see the outputs.Now, go to the S3 console again, refresh the page, and click the Show version button next to Versions. You should now see several versions of your terraform.tfstate file in the S3 bucket).
