@@ -1,6 +1,6 @@
 # terraform_statefile
 # How to manage Terraform State ?
-This article would help us to create a S3 bucket and DynamoDB table using terraform in a single file.We shall Know about following topic:-
+This tutorial would help us to create a S3 bucket and DynamoDB table using terraform in a single file.We shall Know about following topic:-
 1.Terraform State.
 2.Shared storage for state files.
 3.Limitations with terraform Backends.
