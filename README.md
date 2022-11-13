@@ -14,7 +14,7 @@ I got information from this [article](https://blog.gruntwork.io/how-to-manage-te
 - Create IAM user with programmatic access and administrator Access [video](https://www.youtube.com/watch?v=Xx_-IA9qnuI)
 - # Steps to run this code
 - 1.You need to copy and remove terraform backend block and outputs from line no.48 to 59 in main.tf file.
-- 
+
 ![Screenshot (767)](https://user-images.githubusercontent.com/109335469/201523155-66988d98-99ab-481a-8cf9-b8fab935f24f.png)
 
 
