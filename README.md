@@ -19,39 +19,39 @@ I got information from this [article](https://blog.gruntwork.io/how-to-manage-te
 
 
 
--2.Give unique Bucket_NAME in line no.9 in main.tf file.
+2.Give unique Bucket_NAME in line no.9 in main.tf file.
 
--3.Give unique DYNAMODB_TABLE_NAME in line no. 56 in main.tf file
+3.Give unique DYNAMODB_TABLE_NAME in line no. 56 in main.tf file
 
--4. Run terraform init command (which initialize your code)
+4. Run terraform init command (which initialize your code)
 
 ```sh
 terraform init
 ```
 
--5.Run terraform apply command (which create aws instance,aws s3
+5.Run terraform apply command (which create aws instance,aws s3
 bucket,3 protection layer, and aws dynamodb table).
 
 ```sh
 terraform apply
 ```
 
--6.Now add the terraform backend block code which you copy in first step from line no.50 to 61.Give the BUCKET_NAME and DYNAMODB_TABLE_NAME which we create above.
+6.Now add the terraform backend block code which you copy in first step from line no.50 to 61.Give the BUCKET_NAME and DYNAMODB_TABLE_NAME which we create above.
 
 ![Screenshot (769)](https://user-images.githubusercontent.com/109335469/201523325-988bde68-db24-4194-af89-8da2f264d7f1.png)
 
 
--7.Run terraform init command then yes (it download provider code, and configure your Terraform backend.After running this command, your Terraform state will be stored in the S3 bucket. You can check this by heading over to the S3 Management Console in your browser and clicking your bucket).
+7.Run terraform init command then yes (it download provider code, and configure your Terraform backend.After running this command, your Terraform state will be stored in the S3 bucket. You can check this by heading over to the S3 Management Console in your browser and clicking your bucket).
 
 ```sh
 terraform init
 ```
--8.Now add the outputs code which you copy in first step from line no.62 to 70.(Now backend enabled, Terraform will automatically pull the latest state from this S3 bucket before running a command and automatically push the latest state to the S3 bucket after running a command. To see this in action, that's why we add output variables).
+8.Now add the outputs code which you copy in first step from line no.62 to 70.(Now backend enabled, Terraform will automatically pull the latest state from this S3 bucket before running a command and automatically push the latest state to the S3 bucket after running a command. To see this in action, that's why we add output variables).
 
 ![Screenshot (769)](https://user-images.githubusercontent.com/109335469/201523496-9a0f2a55-a42f-4573-b4df-dd8c5d89b666.png)
 
 
--9.Run terraform apply command(to see the outputs.Now, go to the S3 console again, refresh the page, and click the Show version button next to Versions. You should now see several versions of your terraform.tfstate file in the S3 bucket).
+9.Run terraform apply command(to see the outputs.Now, go to the S3 console again, refresh the page, and click the Show version button next to Versions. You should now see several versions of your terraform.tfstate file in the S3 bucket).
 
 ```sh
 terraform apply
