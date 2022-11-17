@@ -58,7 +58,7 @@ terraform apply
 ```
 # STEPS TO DESTROY THESE MACHINES:-
 
-1. Remove lifecycle code which we used in S3 bucket in main.tf from line no. 11 to 15.
+1. Remove lifecycle code which we used in S3 bucket in main.tf from line no. 11 to 14.
 
 ![Screenshot (770)](https://user-images.githubusercontent.com/109335469/201523750-b97612cb-1c82-485e-9b18-f758325fe07c.png)
 2.Remove the backend configuration from main.tf from line no.48 to 59.
