@@ -46,9 +46,10 @@ terraform apply
 ```sh
 terraform init
 ```
-8.Now add the outputs code which you copy in first step from line no.62 to 70.(Now backend enabled, Terraform will automatically pull the latest state from this S3 bucket before running a command and automatically push the latest state to the S3 bucket after running a command. To see this in action, that's why we add output variables).
+8.Now add the outputs code which you copy in first step from line no.60 to 68.(Now backend enabled, Terraform will automatically pull the latest state from this S3 bucket before running a command and automatically push the latest state to the S3 bucket after running a command. To see this in action, that's why we add output variables).
 
-![Screenshot (769)](https://user-images.githubusercontent.com/109335469/201523496-9a0f2a55-a42f-4573-b4df-dd8c5d89b666.png)
+
+![Screenshot (780)](https://user-images.githubusercontent.com/109335469/202350775-c1c60fe1-cf22-45bf-9a60-c815c6ded0ee.png)
 
 
 9.Run terraform apply command(to see the outputs.Now, go to the S3 console again, refresh the page, and click the Show version button next to Versions. You should now see several versions of your terraform.tfstate file in the S3 bucket).
