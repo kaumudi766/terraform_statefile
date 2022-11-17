@@ -36,7 +36,7 @@ bucket,3 protection layer, and aws dynamodb table).
 terraform apply
 ```
 
-6.Now add the terraform backend block code which you copy in first step from line no.50 to 61.Give the BUCKET_NAME and DYNAMODB_TABLE_NAME which we create above.
+6.Now add the terraform backend block code which you copy in first step from line no.48 to 59.Give the BUCKET_NAME and DYNAMODB_TABLE_NAME which we create above.
 
 ![Screenshot (769)](https://user-images.githubusercontent.com/109335469/201523325-988bde68-db24-4194-af89-8da2f264d7f1.png)
 
