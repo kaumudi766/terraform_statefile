@@ -19,7 +19,7 @@ I got information from this [article](https://blog.gruntwork.io/how-to-manage-te
 
 
 
-2.Give unique Bucket_NAME in line no.9 in main.tf file.
+2.Give unique Bucket_NAME in line no.51 in main.tf file.
 
 3.Give unique DYNAMODB_TABLE_NAME in line no. 56 in main.tf file
 
